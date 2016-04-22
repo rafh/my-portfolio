@@ -17,6 +17,7 @@ angular.module('app').controller("MainController", ['$http', function($http) {
     vm.copyright = 'Copyright © 2014 Rafael heard - rh';
 
 
+    //cards in the work section
     vm.myWork = [
 
         {
@@ -70,7 +71,6 @@ angular.module('app').controller("MainController", ['$http', function($http) {
     ];
 
 
-    // var url = 'http://rafaelheard.com/contact-form-handler.php';
     var url = 'contact-form-handler.php';
     vm.codeStatus = "";
     vm.form = {};

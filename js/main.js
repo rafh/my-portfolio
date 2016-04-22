@@ -1,6 +1,4 @@
-/**
- * Created by rafaelheard on 10/29/15.
- */
+
 $(document).ready(function(){
 
     init();
