@@ -1,0 +1,142 @@
+
+.contactView{
+
+    top: 0;
+    min-height: 100%;
+    background-color: $main-color;
+    @include display(flex);
+    @include flex-direction(column);
+    @include angle(after, true);
+    padding-bottom: 60px;
+    z-index: 100;
+    @include justify-content(center);
+
+    .wrap{
+
+        padding: 30px;
+        @include display(flex);
+        @include justify-content(center);
+
+        h2{
+
+            font-family: $mainFont;
+            font-size: 4.5em;
+            margin-bottom: 0;
+
+            @media screen and (max-width: 550px){
+
+                font-size: 4em;
+                padding-top: 50px;
+
+            }
+
+        }
+
+    }
+
+    .hold{
+
+        @include display(flex);
+        width: 100%;
+        margin: 0 auto;
+
+        .myForm{
+
+            @include display(flex);
+            margin: auto;
+            width: 70%;
+            max-width: 800px;
+
+            .form-groups {
+
+                width: 100%;
+
+                .group {
+
+                    position: relative;
+
+                    span {
+
+                        position: absolute;
+                        right: 0;
+                        top: 18px;
+
+                    }
+
+                    .ng-not-empty {
+
+                        &:before {
+                            content: ' ✓';
+                            color: lightgreen;
+                        }
+
+                    }
+
+                    //.ng-invalid-required {
+                    //
+                    //    content: ' ×';
+                    //    color: tomato;
+                    //
+                    //}
+
+                    input {
+
+                        font-family: $subFont;
+                        font-size: 1em;
+                        padding: 10px;
+                        width: calc(100% - 10px);
+                        border: none;
+                        margin: 5px auto;
+
+                    }
+
+                    textarea{
+
+                        font-size: 1em;
+                        width: calc(100% - 10px);
+                        padding: 10px;
+                        border: none;
+                        margin: 5px 0;
+
+                    }
+
+                    .submit{
+
+                        position: relative;
+                        font-family: $mainFont;
+                        font-size: 2em;
+                        cursor: pointer;
+                        width: calc(100% + 10px);
+                        padding: 10px;
+                        background-color: white;
+                        margin: 7px auto;
+                        text-align: center;
+                        @include transition(background-color 0.5s ease);
+                        color: $dark-gray;
+                        letter-spacing: 1px;
+                        border: none;
+
+                        &:disabled {
+
+                            background: lightgrey !important;
+                            cursor: default !important;
+                        }
+
+
+                        &:hover{
+
+                            background: $sub-color;
+                            @include transition(background-color 0.5s ease);
+
+                        }
+
+
+                    }
+
+                }
+            }
+
+        }
+    }
+}
+

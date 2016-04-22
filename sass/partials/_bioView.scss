@@ -1,0 +1,136 @@
+
+.bioView{
+
+    min-height: 70%;
+    background-color: $main-color;
+    @include angle(before, true);
+    @include display(flex);
+    @include flex-direction(row);
+    padding: 20px 0 0;
+    @include justify-content(center);
+
+    @media screen and (max-width: 500px){
+
+        height: auto;
+
+    }
+
+    .container{
+
+        @include display(flex);
+        @include flex-direction(row);
+        width: 100%;
+        margin: 0 auto;
+        //@include linear-gradient(to top, #CECECE, $main-color);
+
+    }
+
+  .wrap{
+
+      margin: auto;
+      flex: 1;
+      max-width: 600px;
+      //height: 100%;
+      padding: 20px 0;
+      @include display(flex);
+      @include flex-direction(column);
+
+      @media screen and (max-width: 800px){
+
+          width: 100%;
+
+      }
+
+      .text-wrap{
+
+          margin: auto;
+          padding-left: 20%;
+
+          @media screen and (max-width: 800px){
+
+              padding: 0 30px;
+
+          }
+
+          .wrap{
+
+              display: none;
+
+              @media screen and (max-width: 800px){
+
+                  @include display(flex);
+
+              }
+
+              img{
+
+                  @media screen and (max-width: 800px){
+
+                      margin: auto;
+                      border-radius: 50%;
+                      width: 200px;
+                      height: 200px;
+                      border: 3px solid white;
+                      background: url("../assets/disorted.jpg") fixed no-repeat #161511;
+                      background-size: contain;
+
+                  }
+
+              }
+
+          }
+
+
+      }
+
+      h3{
+
+          font-family: $mainFont;
+          color: $dark-gray;
+          font-size: 1.625em;
+          letter-spacing: 1.5px;
+          margin-bottom: 5px;
+
+          @media screen and (max-width: 550px){
+
+              font-size: 1.7em;
+
+          }
+
+          span{
+
+              color: $dark-gray;
+
+          }
+
+      }
+
+      p{
+
+          font-family: $subFont;
+          color: $dark-gray;
+          font-size: 1em;
+          text-align: left;
+
+      }
+
+
+  }
+
+  .hold{
+
+      @include flex(1);
+      max-width: 500px;
+      background: url("../assets/me.svg") center top no-repeat;
+      background-size: cover;
+
+
+      @media screen and (max-width: 800px){
+
+          display: none;
+
+      }
+
+  }
+
+}

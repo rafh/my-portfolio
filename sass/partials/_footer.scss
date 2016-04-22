@@ -1,0 +1,126 @@
+footer {
+
+    height: 50%;
+    background: url("../assets/disorted.jpg") no-repeat bottom fixed;
+    background-size: cover;
+    @include display(flex);
+    @include flex-direction(row);
+
+    @media screen and (max-width: 500px){
+
+        @include  flex-direction(column);
+
+    }
+
+  .hold{
+
+      @include flex-grow(1);
+      @include display(flex);
+      @include justify-content(flex-end);
+      @include align-items(flex-end);
+
+
+      @media screen and (max-width: 500px){
+
+          @include order(2);
+
+      }
+
+      p{
+
+          font-family: $mainFont;
+          color: white;
+          letter-spacing: 1px;
+          padding-bottom: 40px;
+          margin-bottom: 0;
+
+          @media screen and (max-width: 500px){
+
+              margin-right: 30px;
+
+          }
+
+      }
+
+  }
+
+  .wrap{
+
+      @include flex-grow(20);
+      height: 100%;
+      @include display(flex);
+      @include justify-content(flex-end);
+      @include align-items(flex-end);
+
+      @media screen and (max-width: 500px){
+
+          @include order(1);
+
+      }
+
+      .logo{
+
+          z-index: 100;
+          width: 75px;
+          padding-left: 30px;
+          box-sizing: border-box;
+          margin: 0 10px 15px 15px;
+          cursor: pointer;
+
+      }
+
+      a{
+
+          padding-bottom: 30px;
+
+          &:last-of-type{
+
+              margin-right: 30px;
+
+          }
+
+      }
+
+      .backup{
+
+          padding-bottom: 30px;
+
+      }
+
+      .fa-twitter-square{
+
+          margin-right: 0 !important;
+
+      }
+
+      i{
+
+          color: white;
+          font-size: 1.6em;
+          margin: 20px 20px 10px;
+          cursor: pointer;
+
+          &:hover{
+
+              color: $sub-color;
+              @include transition(color 0.5s ease);
+
+          }
+
+          &:nth-child(odd){
+
+              margin-right: 0;
+
+          }
+
+          @media screen and (max-width: 550px) {
+
+              font-size: 2em;
+
+          }
+
+      }
+
+  }
+
+}
