@@ -74,13 +74,6 @@
 
                     }
 
-                    //.ng-invalid-required {
-                    //
-                    //    content: ' ×';
-                    //    color: tomato;
-                    //
-                    //}
-
                     input {
 
                         font-family: $subFont;
@@ -97,8 +90,8 @@
                         font-size: 1em;
                         width: calc(100% - 10px);
                         padding: 10px;
-                        border: none;
                         margin: 5px 0;
+                        border: none;
 
                     }
 
@@ -107,15 +100,15 @@
                         position: relative;
                         font-family: $mainFont;
                         font-size: 2em;
+                        letter-spacing: 1px;
+                        text-align: center;
+                        color: $dark-gray;
                         cursor: pointer;
                         width: calc(100% + 10px);
                         padding: 10px;
                         background-color: white;
                         margin: 7px auto;
-                        text-align: center;
                         @include transition(background-color 0.5s ease);
-                        color: $dark-gray;
-                        letter-spacing: 1px;
                         border: none;
 
                         &:disabled {

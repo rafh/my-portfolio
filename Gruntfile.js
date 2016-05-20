@@ -1,15 +1,30 @@
+(function () {
+    'use strict';
+}());
+
 module.exports = function(grunt) {
 
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+
+        concat: {
+            options: {
+                separator: ';\n'
+            },
+            dist: {
+                src: ['js/main.ctrl.js', 'js/main.js'],
+                dest: 'js/merged.js'
+            }
+        },
         uglify: {
             options: {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
-            build: {
-                src: 'app.js',
-                dest: 'min/app-min.js'
+            dist: {
+                files: {
+                    'js/min/merged-min.js': 'js/merged.js'
+                }
             }
         },
         sass: {
@@ -83,7 +98,7 @@ module.exports = function(grunt) {
         watch: {
             scripts: {
                 files: ['js/**/*.js'],
-                tasks: ['jshint', 'uglify', 'notify:scripts'],
+                tasks: ['jshint', 'concat', 'uglify', 'notify:scripts'],
                 options: {
                     spawn: false,
                     livereload: true
@@ -102,6 +117,7 @@ module.exports = function(grunt) {
 
     // Load the plugin that provides the "uglify" task.
     grunt.loadNpmTasks('grunt-svgstore');
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-sass');
@@ -115,6 +131,7 @@ module.exports = function(grunt) {
 
     // Default task(s).
     // grunt.task.run('notify_hooks');
-    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('default', ['concat', 'uglify', 'jshint', 'watch']);
+
 
 };

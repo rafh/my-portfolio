@@ -1,5 +1,4 @@
-
-//preloader
+//preLoader
 var imagesLoaded =false;
 var timesUp = false;
 
@@ -19,7 +18,7 @@ $(document).ready(function(){
 
     init();
     mobileResizeFix();
-    setTimeout(timeoutOver, 2000);
+    setTimeout(timeoutOver, 2500);
 
     //the image's opacity will fade to 0
     //as the page scrolls the position is divided to calculate the opacity
@@ -34,10 +33,9 @@ $(document).ready(function(){
         $('.blurred-img').css('opacity', opacityVal);
     });
 
+    //calculates the height for the transistion image
     var calcH = $('.heroView').outerHeight( true );
-    console.log(calcH);
     $('.img-src').css('height', calcH);
-    // $('.img-src').innerHeight();
 
 
 });
@@ -71,7 +69,7 @@ function init(){
 
     //form sent notification -- temp fix
     $('.submit').click(function () {
-       $(this).html('SENT!');
+        $(this).html('SENT!');
     });
 
     //prevent scrolling on body -- temp fix
@@ -100,4 +98,3 @@ function init(){
     });
 
 }
-

@@ -1,7 +1,6 @@
 
 .heroView{
 
-    // min-height: 90%;
     background: url("../assets/mountains-bw.jpg")  center  $main-color;
     background-size: cover;
     @include display(flex);

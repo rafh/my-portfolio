@@ -25,9 +25,7 @@
     <?php include_once("assets/svg/svg-master.svg"); ?>
 
     <div class="preloader show">
-<!--        <div class="box">-->
-            <svg class="loading"><use xlink:href="#loader"></use></svg>
-<!--        </div>-->
+        <svg class="loading"><use xlink:href="#loader"></use></svg>
     </div>
 
     <section class="heroView">
@@ -133,11 +131,6 @@
                         <div ng-messages="contactForm.message.$error" ng-if="contactForm.userMessage.$dirty" ng-cloak>
                     </div>
 
-    <!--                <div class="group">-->
-    <!--                    <input type="text" class="form-control" id="human" name="human" ng-model="main.form.human" placeholder="2 + 3 = ?" ng-class="{ valid: main.form.human == 5 }">-->
-    <!--                    <span ng-model="main.form.human"></span>-->
-    <!--                </div>-->
-
                     <button class="submit" ng-disabled="contactForm.$invalid ">SEND</button>
                 </div>
             </form>
@@ -161,9 +154,7 @@
 </body>
 <script src="js/min/angular.min.js"></script>
 <script src="js/min/angular-messages.min.js"></script>
-<!-- <script src="js/min/app-min.js"></script> -->
-<script src="js/main.ctrl.js"></script>
 <script src="js/min/jquery.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/min/merged-min.js"></script>
 
 </html>
