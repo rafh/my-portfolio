@@ -8,10 +8,10 @@
     background-color: $main-color;
     @include display(flex);
     @include flex-direction(column);
-    @include angle(after, true);
-    padding-bottom: 60px;
-    z-index: 100;
+    padding-top: 70px;
+    z-index: 200 !important;
     @include justify-content(center);
+    @include angle(before, true);
 
     .wrap{
 
@@ -127,7 +127,7 @@
 
                         &:hover{
 
-                            background: $sub-color;
+                            background: $orange;
                             @include transition(background-color 0.5s ease);
 
                         }

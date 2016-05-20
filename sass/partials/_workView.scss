@@ -9,6 +9,17 @@
     @include display(flex);
     @include flex-direction(column);
     @include justify-content(center);
+    @include angle(before, true);
+    @include angle(after, false);
+    z-index: 100000;
+
+    &:after{
+
+        top: 40px;
+        height: 100%;
+        transform-origin: 50% 0;
+
+    }
 
     .wrap{
 
@@ -41,7 +52,7 @@
         max-width: 1000px;
         @include display(flex);
         @include flex-direction(row);
-        padding: 0 30px 50px 30px;
+        padding: 0 30px 100px 30px;
         @include flex-wrap(wrap);
         overflow: scroll;
         @include justify-content(center);

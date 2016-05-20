@@ -1,20 +1,22 @@
 /**
  * Created by rafaelheard on 10/11/15.
  */
-
+angular.module('app', ['ngMessages']);
 angular.module('app').controller("MainController", ['$http', function($http) {
 
     var vm = this;
 
-    vm.title = 'Rafael Heard';
-    vm.titleCaption = 'Web Developer';
-    vm.bioTitle = 'My work is my passion...';
-    vm.bio = "I focus on great functionality, clean markup, and bringing designs to life. I'm constantly learning to keep my skills relevant.  When I am away from my computer I like building DIY projects.";
-    vm.workTitle = 'Work/Play';
-    vm.contactTitle = 'Contact Me';
-    vm.twitter = 'https://twitter.com/HeardRaf';
-    vm.linkedin = 'https://www.linkedin.com/in/roheard';
-    vm.copyright = 'Copyright © 2014 Rafael heard - rh';
+    vm.first         = 'Rafael';
+    vm.last          = 'Heard';
+    vm.titleCaption  = 'Web Developer';
+    vm.bioTitle      = 'My work is my passion...';
+    vm.bio           = "I focus on great functionality, clean markup, and bringing designs to life. I'm constantly learning to keep my skills relevant.  When I am away from my computer I like building DIY projects.";
+    vm.workTitle     = 'Work/Play';
+    vm.contactTitle  = 'Contact Me';
+    vm.twitter       = 'https://twitter.com/HeardRaf';
+    vm.linkedin      = 'https://www.linkedin.com/in/roheard';
+    vm.github        = 'https://github.com/rafh';
+    vm.copyright     = 'Copyright © 2016 Rafael heard - rh';
 
 
     //cards in the work section
@@ -58,13 +60,13 @@ angular.module('app').controller("MainController", ['$http', function($http) {
         },
         {
             id: 4,
-            title: 'Ordering app (coming soon)',
-            link: 'http://rafaelheard.com/new-eats/',
-            preview: '../assets/coming-soon.png',
+            title: 'Ordering app',
+            link: 'http://rafaelheard.com/the-menu/',
+            preview: '../assets/menu.jpg',
             image: '../assets/orderingApp.png',
             alt: 'Preview of App',
-            class: 'coming-soon',
-            content: "I am currently building an application for ordering while on the go.  This application is being built using Angular.  The menu is populated using a remote database.  This database will also receive any orders placed. Once the other has been finished the user will be notified via a notification."
+            class: 'no-shadow',
+            content: "This is a application I built in my free time.  The premise is a user would order food using their mobile device from a single restaurant or multiple locations. Once all desired items have been added to the cart they are able to checkout, and they will be able to see a quick recap of what they ordered.  With the idea it would be mainly used on mobile devices.  I designed and developed this application mobile up. I used Photoshop to create wireframes and mockups.  Angular, jQuery, HTML, and SASS helps my application function properly."
         }
 
 

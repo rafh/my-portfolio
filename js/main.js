@@ -1,11 +1,60 @@
 
+//preloader
+var imagesLoaded =false;
+var timesUp = false;
+
+$(window).load(function () {
+    imagesLoaded = true;
+    turnOffPreloader("images loaded");
+});
+
+function timeoutOver() {
+    timesUp = true;
+    turnOffPreloader("time");
+}
+
+
+
 $(document).ready(function(){
 
     init();
     mobileResizeFix();
+    setTimeout(timeoutOver, 2000);
+
+    //the image's opacity will fade to 0
+    //as the page scrolls the position is divided to calculate the opacity
+    $(window).scroll(function() {
+        var $s = $(window).scrollTop(),
+            opacityVal = ($s / 200.0);
+
+        //once the opacity is 100% is will remain at 100%
+        if($('.blurred-img').css('opacity') >= 1){
+            opacityVal = ( $s/$s );
+        }
+        $('.blurred-img').css('opacity', opacityVal);
+    });
+
+    var calcH = $('.heroView').outerHeight( true );
+    console.log(calcH);
+    $('.img-src').css('height', calcH);
+    // $('.img-src').innerHeight();
+
 
 });
 
+//check if all images are loaded and removes the preloader
+function turnOffPreloader(vars){
+
+    if( imagesLoaded && timesUp === true){
+        $('body').removeClass('no-scroll');
+        $('.preloader').removeClass('show');
+        $('.preloader').addClass('hide');
+    }
+
+}
+
+//top URL on mobile effects fixed images
+//helps fixed background images on mobile by taking into account top URL bar size change
 function mobileResizeFix() {
 
     //fix for mobile URL bar resizing

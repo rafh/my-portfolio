@@ -1,0 +1,34 @@
+{
+  "name": "portfolio",
+  "version": "1.3.0",
+  "description": "My portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafh/my-portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Rafael Heard <rafael.heard@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafh/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/rafh/my-portfolio#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-notify": "^0.4.5",
+    "grunt-sass": "^1.2.0",
+    "grunt-svgstore": "^1.0.0"
+  }
+}

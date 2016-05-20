@@ -5,10 +5,18 @@
 footer {
 
     height: 50%;
-    background: url("../assets/disorted.jpg") no-repeat bottom fixed;
+    background: url("../assets/mountains.jpg") no-repeat bottom center;
     background-size: cover;
     @include display(flex);
     @include flex-direction(row);
+    @include angle(before, true);
+
+    &:before{
+
+        background: $main-color;
+        height: 30%;
+
+    }
 
     @media screen and (max-width: 500px){
 
@@ -37,6 +45,7 @@ footer {
           letter-spacing: 1px;
           padding-bottom: 40px;
           margin-bottom: 0;
+          z-index: 100;
 
           @media screen and (max-width: 500px){
 
@@ -88,42 +97,11 @@ footer {
       .backup{
 
           padding-bottom: 30px;
+          height: 30px;
+          width: 30px;
 
       }
 
-      .fa-twitter-square{
-
-          margin-right: 0 !important;
-
-      }
-
-      i{
-
-          color: white;
-          font-size: 1.6em;
-          margin: 20px 20px 10px;
-          cursor: pointer;
-
-          &:hover{
-
-              color: $sub-color;
-              @include transition(color 0.5s ease);
-
-          }
-
-          &:nth-child(odd){
-
-              margin-right: 0;
-
-          }
-
-          @media screen and (max-width: 550px) {
-
-              font-size: 2em;
-
-          }
-
-      }
 
   }
 

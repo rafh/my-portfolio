@@ -30,7 +30,7 @@
     .modal-trigger {
 
         padding: 0.8em 1em;
-        @include transition(all, 0.2s ease-in-out);
+        @include transition(all, 0.4s ease-in-out);
 
         &:hover{
 
@@ -46,7 +46,6 @@
         @include position(fixed, 0);
         background-color: rgba(#000, 0.85);
         opacity: 0;
-        //padding-top: 0.6em;
         text-align: left;
         visibility: hidden;
         z-index: 10000;
@@ -169,7 +168,7 @@
 
         display: block;
         background: $sub-color;
-        width: 200px;
+        max-width: 270px;
         padding: 10px;
         border-radius: 5px;
         text-align: center;
@@ -211,6 +210,19 @@
 
         }
 
+
+    }
+
+    .no-shadow{
+
+        img{
+
+            box-shadow: none !important;
+            width: 80%;
+            max-width: 320px;
+            margin: auto;
+
+        }
 
     }
 }
