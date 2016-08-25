@@ -14,7 +14,7 @@ body{
 
 }
 
-html{
+html {
 
     height: 100%;
     font-size: 18px;
@@ -70,12 +70,6 @@ p{
 
 }
 
-.no-scroll{
-
-    overflow-y: hidden;
-
-}
-
 .preloader{
 
     position: fixed;
@@ -95,39 +89,11 @@ p{
 
 }
 
-.show{
-    display: -webkit-flex;
-    display: flex;
-    overflow-y: hidden;
-}
-
-.hide{
-
-    opacity: 0;
-    visibility: hidden;
-    @include transition( all .5s ease-in-out );
-
-}
-
-.social-btn{
-
-    width: 30px;
-    height: 30px;
-    margin-left: 30px;
-
-    @media screen and (max-width: 500px) {
-
-        width: 25px;
-        height: 25px;
-
-    }
-  
-}
-
 .btn{
 
+
     @include transition ( all ease .5s );
-    fill: $orange !important;
+    fill: $orange;
     color: $orange;
     position: relative;
     z-index: 30;
@@ -138,6 +104,34 @@ p{
         @include transition ( all ease .5s );
 
     }
+
+}
+
+.btn__social{
+
+    display: inline-block;
+    margin-left: 30px;
+
+    svg{
+
+        width: 30px;
+        height: 30px;
+        fill: $orange;
+
+        &:hover{
+            fill: $sub-color;
+        }
+
+
+        @media screen and (max-width: 500px) {
+
+            width: 25px;
+            height: 25px;
+
+        }
+
+    }
+
 }
 
 .floating{
@@ -159,15 +153,15 @@ p{
 
     from {-webkit-transform:translate(0, 0px);}
     65% {-webkit-transform:translate(0, 15px);}
-    to {-webkit-transform: translate(0, -0px);    }    
+    to {-webkit-transform: translate(0, -0px);    }
 
 }
-    
+
 @-moz-keyframes Floating{
 
     from {-moz-transform:translate(0, 0px);}
     65% {-moz-transform:translate(0, 15px);}
-    to {-moz-transform: translate(0, -0px);}    
+    to {-moz-transform: translate(0, -0px);}
 
 }
 

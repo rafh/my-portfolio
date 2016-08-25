@@ -21,32 +21,31 @@
 
 </head>
 
-<body ng-app="app" ng-controller="MainController as main" class="no-scroll">
+<body ng-app="app" ng-controller="MainController as main">
     <?php include_once("assets/svg/svg-master.svg"); ?>
 
-    <div class="preloader show">
+    <!-- <div class="preloader show">
         <svg class="loading"><use xlink:href="#loader"></use></svg>
-    </div>
+    </div> -->
 
     <section class="heroView">
     <!--    <div class="overlay"></div>-->
-        <img class="img-src blurred-img" src="assets/mountains.jpg">
+        <img class="img-src blurred-img" src="assets/city.jpg">
 
         <div class="hold">
-            <!-- <img class="logo" src="assets/svg/logo.svg"> -->
             <a href="#" class="logo-wrap"><svg class="logo"><use xlink:href="#logo"></use></svg></a>
 
             <div class="wrap">
-                <a ng-href="{{main.linkedin}}" target="_blank" rel="nofollow"><svg class="btn social-btn"><use xlink:href="#linkedin-icon"></use></svg></a>
-                <a ng-href="{{main.twitter}}" target="_blank" rel="nofollow"><svg class="btn social-btn"><use xlink:href="#twitter-icon"></use></svg></a>
-                <a ng-href="{{main.github}}" target="_blank" rel="nofollow"><svg class="btn social-btn"><use xlink:href="#github-icon"></use></svg></a>
+                <a ng-href="{{main.linkedin}}" target="_blank" rel="nofollow" class="btn btn__social"><svg class=""><use xlink:href="#linkedin-icon"></use></svg></a>
+                <a ng-href="{{main.twitter}}" target="_blank" rel="nofollow" class="btn btn__social"><svg><use xlink:href="#twitter-icon"></use></svg></a>
+                <a ng-href="{{main.github}}" target="_blank" rel="nofollow" class="btn btn__social"><svg><use xlink:href="#github-icon"></use></svg></a>
             </div>
 
         </div>
 
         <div class="wrap" ng-cloak>
             <h1><span>{{main.first}} </span>{{main.last}}</h1>
-            <p>Resourceful <span>{{main.titleCaption}}</span></p>
+            <p>Resourceful {{main.titleCaption}}</p>
             <a href="#"><svg class="btn bouncing-arrow floating"><use xlink:href="#down-arrow"></use></svg></a>
         </div>
 
@@ -60,14 +59,15 @@
                     <div class="wrap">
                         <img src="assets/svg/me.svg">
                     </div>
-                    <h3>Hello! <span></span></h3>
-                    <p>You probably already know my name. Welcome to my portfolio built with Angular JS.<br>{{main.bio}}</p>
+                    <h3>Hello...<span></span></h3>
+                    <p>You probably already know my name. Welcome to my portfolio built with AngularJS.</p>
+                    <p>{{main.bio}}</p>
                     <h3 ng-cloak>{{main.bioTitle}}</h3>
                 </div>
             </div>
 
             <div class="hold"><!--hold image of me--></div>
-            
+
         </div>
     </section>
 
@@ -126,7 +126,7 @@
                     </div>
 
                     <div class="group">
-                        <textarea type="text" name="message" ng-model="main.form.message" ng-minlength="10" rows="10" required></textarea>
+                        <textarea type="text" name="message" ng-model="main.form.message" ng-minlength="1" rows="10" required></textarea>
                         <span ng-model="main.form.message"></span>
                         <div ng-messages="contactForm.message.$error" ng-if="contactForm.userMessage.$dirty" ng-cloak>
                     </div>
@@ -143,12 +143,12 @@
         </div>
         <div class="wrap">
             <svg class="btn backup faa-float animated"><use xlink:href="#up-arrow"></use></svg>
-            <a ng-href="{{main.linkedin}}" target="_blank" rel="nofollow"><svg class="btn social-btn"><use xlink:href="#linkedin-icon"></use></svg></a>
-            <a ng-href="{{main.twitter}}" target="_blank" rel="nofollow"><svg class="btn social-btn"><use xlink:href="#twitter-icon"></use></svg></a>
-            <a ng-href="{{main.github}}" target="_blank" rel="nofollow"><svg class="btn social-btn"><use xlink:href="#github-icon"></use></svg></a>
+            <a ng-href="{{main.linkedin}}" target="_blank" rel="nofollow" class="btn btn__social"><svg><use xlink:href="#linkedin-icon"></use></svg></a>
+            <a ng-href="{{main.twitter}}" target="_blank" rel="nofollow" class="btn btn__social"><svg><use xlink:href="#twitter-icon"></use></svg></a>
+            <a ng-href="{{main.github}}" target="_blank" rel="nofollow" class="btn btn__social"><svg><use xlink:href="#github-icon"></use></svg></a>
         </div>
     </footer>
-    
+
 
 
 </body>

@@ -13,7 +13,6 @@ function timeoutOver() {
 }
 
 
-
 $(document).ready(function(){
 
     init();

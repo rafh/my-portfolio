@@ -51,6 +51,15 @@ angular.module('app').controller("MainController", ['$http', function($http) {
         },
         {
             id: 3,
+            title: 'Cutz by Drew',
+            link: 'http://www.cutzbydrew.com/',
+            preview: '../assets/cutz.jpg',
+            image: '../assets/cutzbydrew-clip.jpg',
+            alt: 'Cutz by Drew Snapshot',
+            content: 'I was contracted to complete this web application by a local barber. During the process of designing and developing I mentored a student from a local university.  My goal was to complete this website in a timely manner, help improve the growth of this business, and allow this student to gain valuable experience. This web application was designed and developed by the student and myself. It is also a custom Wordpress theme.'
+        },
+        {
+            id: 4,
             title: 'Restaurant Review',
             link: 'http://rafaelheard.com/new-eats/',
             preview: '../assets/rest.png',
@@ -59,7 +68,7 @@ angular.module('app').controller("MainController", ['$http', function($http) {
             content: "This website is something I built in my free time. I designed this from start to finish using Photoshop. I've noticed a few restaurant websites recently geared more so for a mobile experience, so I started my designs from mobile and worked my way up to desktop. Once I was done designing I began the development phase.  I used Sass and Jquery to finish this website. I used flexbox throughout this website to showcase my understanding of this aspect."
         },
         {
-            id: 4,
+            id: 5,
             title: 'Ordering app',
             link: 'http://rafaelheard.com/the-menu/',
             preview: '../assets/menu.jpg',
@@ -118,7 +127,6 @@ function timeoutOver() {
     timesUp = true;
     turnOffPreloader("time");
 }
-
 
 
 $(document).ready(function(){

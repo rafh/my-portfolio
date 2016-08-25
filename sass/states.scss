@@ -1,0 +1,23 @@
+/*******************
+*   States
+*******************/
+
+.no-scroll{
+
+    overflow-y: hidden;
+
+}
+
+.show{
+    display: -webkit-flex;
+    display: flex;
+    overflow-y: hidden;
+}
+
+.hide{
+
+    opacity: 0;
+    visibility: hidden;
+    @include transition( all .5s ease-in-out );
+
+}

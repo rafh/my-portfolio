@@ -15,9 +15,7 @@
     @include justify-content(center);
     @include linear-gradient(to left, $main-color, white);
 
-
-
-    @media screen and (max-width: 500px){
+    @media screen and (min-width: 768px){
 
         height: auto;
 
@@ -29,117 +27,117 @@
         @include flex-direction(row);
         width: 100%;
         margin: 0 auto;
-        //@include linear-gradient(to top, $main-color, white);
 
     }
 
-  .wrap{
+    .wrap{
 
-      margin: auto;
-      flex: 1;
-      max-width: 600px;
-      //height: 100%;
-      padding: 20px 0;
-      @include display(flex);
-      @include flex-direction(column);
+        margin: auto;
+        flex: 1;
+        max-width: 600px;
+        padding: 20px 0;
+        @include display(flex);
+        @include flex-direction(column);
 
-      @media screen and (max-width: 800px){
+        @media screen and (min-width: 768px){
 
-          width: 100%;
+            width: 100%;
 
-      }
+        }
 
-      .text-wrap{
+        .text-wrap{
 
-          margin: auto;
-          padding-left: 20%;
+            padding: 0 30px;
 
-          @media screen and (max-width: 800px){
+            @media screen and (min-width: 768px){
 
-              padding: 0 30px;
+              margin: auto;
+              padding-left: 20%;
 
-          }
+            }
 
-          .wrap{
+            .wrap{
 
-              display: none;
+                @include display(flex);
 
-              @media screen and (max-width: 800px){
+                @media screen and (min-width: 768px){
 
-                  @include display(flex);
+                  display: none;
 
-              }
+                }
 
-              img{
+                img{
 
-                  @media screen and (max-width: 800px){
+                   margin: auto;
+                        border-radius: 50%;
+                        width: 200px;
+                        height: 200px;
+                        border: 3px solid white;
+                        background: $blue;
+                        @include linear-gradient(to top, $main-color, $blue);
+                        background-size: cover;
 
-                      margin: auto;
-                      border-radius: 50%;
-                      width: 200px;
-                      height: 200px;
-                      border: 3px solid white;
-                      background: $blue;
-                      @include linear-gradient(to top, $main-color, $blue);
-                      background-size: cover;
+                    @media screen and (min-width: 768px){
 
-                  }
+                      display: none;
 
-              }
+                    }
 
-          }
+                }
+
+            }
 
 
-      }
+        }
 
-      h3{
+        h3{
 
-          font-family: $mainFont;
-          color: $dark-gray;
-          font-size: 1.625em;
-          letter-spacing: 1.5px;
-          margin-bottom: 5px;
+            font-family: $mainFont;
+            color: $dark-gray;
+            font-size: 1.625em;
+            letter-spacing: 1.5px;
+            margin-bottom: 5px;
 
-          @media screen and (max-width: 550px){
+            @media screen and (min-width: 768px){
 
-              font-size: 1.7em;
+                font-size: 1.7em;
 
-          }
+            }
 
-          span{
+            span{
 
-              color: $dark-gray;
+                color: $dark-gray;
 
-          }
+            }
 
-      }
+        }
 
-      p{
+        p{
 
           font-family: $subFont;
           color: $dark-gray;
           font-size: 1em;
           text-align: left;
 
-      }
+        }
 
 
-  }
+    }
 
-  .hold{
+    .hold{
 
-      @include flex(1);
-      max-width: 500px;
-      background: url("../assets/me.svg") center top no-repeat;
-      background-size: cover;
+        display: none;
 
+        @media screen and (min-width: 768px){
 
-      @media screen and (max-width: 800px){
+          @include display(flex);
+          @include flex(1);
+          max-width: 500px;
+          background: url("../assets/me.svg") center top no-repeat;
+          background-size: cover;
 
-          display: none;
+        }
 
-      }
-
-  }
+    }
 
 }
