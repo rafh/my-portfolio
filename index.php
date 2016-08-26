@@ -60,7 +60,7 @@
                         <img src="assets/svg/me.svg">
                     </div>
                     <h3>Hello...<span></span></h3>
-                    <p>You probably already know my name. Welcome to my portfolio built with AngularJS.</p>
+                    <p>{{main.bioIntro}}</p>
                     <p>{{main.bio}}</p>
                     <h3 ng-cloak>{{main.bioTitle}}</h3>
                 </div>
@@ -76,8 +76,8 @@
             <h2 ng-cloak>{{main.workTitle}}</h2>
         </div>
         <div class="center">
-            <div class="hold">
-                <div class="modal" ng-repeat="item in main.myWork" ng-click="input.isChecked = !input.isChecked">
+            <div  id="js-fadeInElement" class="hold">
+                <div class="modal js-fade-element-hide" ng-repeat="item in main.myWork" ng-click="input.isChecked = !input.isChecked">
                     <label for="modal-{{item.id}}">
                         <div class="overlay"></div>
                         <div class="modal-trigger card" ng-style="{'background-image':'url({{item.preview}})'}"></div>

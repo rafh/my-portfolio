@@ -111,6 +111,13 @@ module.exports = function(grunt) {
                     spawn: false,
                     livereload: true
                 }
+            },
+            structure: {
+                files: ['**/*.php', '**/*.html'],
+                options: {
+                    spawn: false,
+                    livereload: true
+                }
             }
         }
     });

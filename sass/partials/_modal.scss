@@ -31,10 +31,12 @@
 
         padding: 0.8em 1em;
         @include transition(all, 0.4s ease-in-out);
+        // @include transition(transform 1s);
 
         &:hover{
 
             @include filter(grayscale(100%));
+            // @include transform(scale(1.1));
 
         }
 
