@@ -96,7 +96,4 @@ function init(){
         return false;
     });
 
-
-  });
-
 }

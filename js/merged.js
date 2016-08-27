@@ -214,56 +214,6 @@ function init(){
     });
 
 
-    var topOfOthDiv = $(".workView").offset().top;
-    $(window).scroll(function() {
-        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $('.modal').each(function(i){
-                var row = $(this);
-                setTimeout(function() {
-                    row.addClass('js-fade-element-show');
-                }, 200*i);
-            });
-        }else{
-           $('.modal').each(function(i){
-                var row = $(this);
-                setTimeout(function() {
-                    row.removeClass('js-fade-element-show');
-                }, 200*i);
-            });
-        }
-    });
+  });
 
 }
-
-
-// $(document).ready(function() {
-//   var element = document.getElementById("js-fadeInElement");
-//   $(element).addClass('js-fade-element-hide');
-
-//   $(window).scroll(function() {
-//     if( $("#js-fadeInElement").length > 0 ) {
-//       var elementTopToPageTop = $(element).offset().top;
-//       var windowTopToPageTop = $(window).scrollTop();
-//       var windowInnerHeight = window.innerHeight;
-//       var elementTopToWindowTop = elementTopToPageTop - windowTopToPageTop;
-//       var elementTopToWindowBottom = windowInnerHeight - elementTopToWindowTop;
-//       var distanceFromBottomToAppear = 300;
-
-//       if(elementTopToWindowBottom > distanceFromBottomToAppear) {
-//         $(element).addClass('js-fade-element-show');
-//       }
-//       else if(elementTopToWindowBottom < 0) {
-//         $(element).each(function (i, el) {
-//             window.setTimeout(function(){
-//                 $(el).removeClass('js-fade-element-show');
-//             }, 1400 * i);
-//         });
-//         $(element).each(function (i, el) {
-//             window.setTimeout(function(){
-//                 $(el).addClass('js-fade-element-hide');
-//             }, 1400 * i);
-//         });
-//       }
-//     }
-//   });
-// });
