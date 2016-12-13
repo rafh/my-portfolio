@@ -61,6 +61,12 @@
         @include size(1.5em);
         background: white;
         cursor: pointer;
+        transition: all .8s;
+        transform: rotate(-90deg);
+
+        &:hover {
+            transform: rotate(90deg);
+        }
 
         &:after,
         &:before {
