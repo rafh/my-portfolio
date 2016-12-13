@@ -15,6 +15,6 @@
 
 </body>
 
-<script src="js/min/merged-min.js"></script>
+<script src="js/min/merged-min.js?1.1"></script>
 
 </html>
