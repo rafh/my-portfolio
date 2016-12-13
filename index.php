@@ -23,7 +23,7 @@
         </div>
 
 
-    </section>ccc
+    </section>
 
     <section class="bioView">
         <div class="container">
