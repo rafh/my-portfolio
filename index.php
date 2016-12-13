@@ -18,7 +18,7 @@
 
         <div class="wrap" ng-cloak>
             <h1><span>{{main.first}} </span>{{main.last}}</h1>
-            <p>Resourceful {{main.titleCaption}}</p>
+            <p>{{main.adj}} {{main.titleCaption}}</p>
             <a href="#"><svg class="btn bouncing-arrow floating"><use xlink:href="#down-arrow"></use></svg></a>
         </div>
 

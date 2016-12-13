@@ -8,6 +8,7 @@ angular.module('app').controller("MainController", ['$http', function($http) {
 
     vm.first         = 'Rafael';
     vm.last          = 'Heard';
+    vm.adj           = 'Passionate';
     vm.titleCaption  = 'Web Developer';
     vm.bioTitle      = 'My work is my passion...';
     vm.bioIntro      = 'You probably already know my name. Welcome to my portfolio built with AngularJS.';
@@ -42,7 +43,7 @@ angular.module('app').controller("MainController", ['$http', function($http) {
             content: "I was contracted to help complete the development of this custom Wordpress site.  This site was built using JavaScript, PHP, HTML5, and SASS.  I developed this site, and gave the client the ability to change and update content with ease."
         },
         {
-            id: 6,
+            id: 7,
             title: 'Grocerii',
             link: 'https://github.com/rafh/grocerii',
             preview: '../dist/grocerii-clip.png',
@@ -52,7 +53,7 @@ angular.module('app').controller("MainController", ['$http', function($http) {
             image_3: '../dist/grocerii-3.png',
             alt: 'grocerii-screenshot',
             class: 'no-shadow app-layout',
-            content: "I designed and developed this Android app.  It allows the user to build a cart by selecting items available in the grocery store or scan items within their homes.  Once the user is done they can send their cart to their grocery store and choose a date to pickup their cart. This app was built using AngularJS 1.x, HTML5, SASS, and Ionic"
+            content: "I designed and developed this Android app.  It allows the user to build a cart by selecting items available in the grocery store or scan items within their homes.  Once the user is done they can send their cart to their grocery store and choose a date to pickup their cart. This app was built using AngularJS 1.x, HTML5, SASS, and Ionic. This application is not published, but the codebase is available for other curious devs."
         },
         {
             id: 3,
