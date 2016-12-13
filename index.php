@@ -64,9 +64,7 @@
                             <a class="modal-cta" ng-href="{{item.link}}" target="_blank" rel="nofollow">launch application</a>
                             <div class="modal-image">
                                 <img ng-src="{{item.image}}" alt="{{item.alt}}">
-                                <img ng-src="{{item.image_1}}" alt="{{item.alt}}">
-                                <img ng-src="{{item.image_2}}" alt="{{item.alt}}">
-                                <img ng-src="{{item.image_3}}" alt="{{item.alt}}">
+                                <img ng-if="item.image_1" ng-src="{{item.image_1}}" alt="{{item.alt}}">
                             </div>
                         </div>
                     </div>
