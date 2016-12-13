@@ -6,9 +6,9 @@
     position: relative;
     min-height: 100%;
     background-color: $sub-color;
-    @include display(flex);
-    @include flex-direction(column);
-    @include justify-content(center);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     @include angle(before, true);
     @include angle(after, false);
     z-index: 100000;
@@ -24,16 +24,16 @@
     .wrap{
 
         padding: 30px 30px 0;
-        @include display(flex);
-        @include justify-content(center);
+        display: flex;
+        justify-content: center;
 
         h2{
 
             font-family: $mainFont;
             font-size: 4.5em;
             padding: 30px 30px 0;
-            @include display(flex);
-            @include justify-content(center);
+            display: flex;
+            justify-content: center;
 
             @media screen and (max-width: 550px){
 
@@ -50,12 +50,12 @@
 
         margin: auto;
         max-width: 1000px;
-        @include display(flex);
-        @include flex-direction(row);
+        display: flex;
+        flex-direction: row;
         padding: 0 30px 100px 30px;
-        @include flex-wrap(wrap);
+        flex-wrap: wrap;
         overflow: scroll;
-        @include justify-content(center);
+        justify-content: center;
         overflow: hidden;
 
         .card{
@@ -80,7 +80,8 @@
         opacity: 0;
         visibility: hidden;
         z-index: 100;
-        @include transition(opacity .3s ease-in 0s, visibility .3s ease-in 0s);
+        transition: opacity .3s ease-in 0s, visibility .3s ease-in 0s;
 
     }
+
 }

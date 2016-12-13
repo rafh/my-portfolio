@@ -6,18 +6,18 @@
     top: 0;
     min-height: 100%;
     background-color: $main-color;
-    @include display(flex);
-    @include flex-direction(column);
+    display: flex;
+    flex-direction: column;
     padding-top: 70px;
     z-index: 200 !important;
-    @include justify-content(center);
+    justify-content: center;
     @include angle(before, true);
 
     .wrap{
 
         padding: 30px;
-        @include display(flex);
-        @include justify-content(center);
+        display: flex;
+        justify-content: center;
 
         h2{
 
@@ -39,13 +39,13 @@
 
     .hold{
 
-        @include display(flex);
+        display: flex;
         width: 100%;
         margin: 0 auto;
 
         .myForm{
 
-            @include display(flex);
+            display: flex;
             margin: auto;
             width: 70%;
             max-width: 800px;
@@ -109,20 +109,28 @@
                         padding: 10px;
                         background-color: white;
                         margin: 7px auto;
-                        @include transition(background-color 0.5s ease);
+                        transition: background-color 0.5s ease;
                         border: none;
 
                         &:disabled {
 
                             background: lightgrey !important;
                             cursor: default !important;
+
+                            &:hover{
+
+                                color: $dark-gray;
+
+                            }
+
                         }
 
 
                         &:hover{
 
                             background: $orange;
-                            @include transition(background-color 0.5s ease);
+                            transition: background-color 0.5s ease;
+                            color: white;
 
                         }
 

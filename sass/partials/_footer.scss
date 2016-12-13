@@ -5,10 +5,10 @@
 footer {
 
     height: 50%;
-    background: url("../assets/city.jpg") no-repeat bottom center;
+    background: url("../dist/city.jpg") no-repeat bottom center;
     background-size: cover;
-    @include display(flex);
-    @include flex-direction(column);
+    display: flex;
+    flex-direction: column;
     @include angle(before, true);
 
     &:before{
@@ -20,7 +20,7 @@ footer {
 
     @media screen and (min-width: 614px){
 
-        @include  flex-direction(row);
+        flex-direction: row;
 
     }
 
@@ -36,10 +36,10 @@ footer {
             position: relative;
             bottom: 0;
 
-            @include order(1);
-            @include display(flex);
-            @include justify-content(flex-end);
-            @include align-items(flex-end);
+            order: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
 
         }
 
@@ -67,16 +67,16 @@ footer {
 
     .wrap{
 
-        @include flex-grow(20);
+        flex-grow: 20;
         height: 100%;
-        @include display(flex);
-        @include justify-content(flex-end);
-        @include align-items(flex-end);
-        @include order(1);
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        order: 1;
 
         @media screen and (min-width: 614px){
 
-            @include order(1);
+            order: 1;
 
         }
 

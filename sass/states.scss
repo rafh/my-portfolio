@@ -18,15 +18,6 @@
 
     opacity: 0;
     visibility: hidden;
-    @include transition( all .5s ease-in-out );
+    transition: all .5s ease-in-out;
 
-}
-
-.js-fade-element-hide {
-    opacity: 0;
-}
-
-.js-fade-element-show {
-    opacity: 1;
-    @include transition( all .4s ease-in-out );
 }

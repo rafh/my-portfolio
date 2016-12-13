@@ -30,12 +30,12 @@
     .modal-trigger {
 
         padding: 0.8em 1em;
-        @include transition(all, 0.4s ease-in-out);
+        transition: all, 0.4s ease-in-out;
         // @include transition(transform 1s);
 
         &:hover{
 
-            @include filter(grayscale(100%));
+            filter: grayscale(100%);
             // @include transform(scale(1.1));
 
         }
@@ -44,7 +44,7 @@
 
     .modal-fade-screen {
 
-        @include transition(opacity 0.5s ease);
+        transition: opacity 0.5s ease;
         @include position(fixed, 0);
         background-color: rgba(#000, 0.85);
         opacity: 0;
@@ -66,7 +66,7 @@
         &:before {
 
             @include position(absolute, 3px 3px 0 50%);
-            @include transform(rotate(45deg));
+            transform: rotate(45deg);
             @include size(0.15em 1.5em);
             background: $light-gray;
             content: '';
@@ -84,7 +84,7 @@
 
         &:before {
 
-            @include transform(rotate(-45deg));
+            transform: rotate(-45deg);
 
         }
 
@@ -92,7 +92,7 @@
 
     .modal-inner {
 
-        @include transition(opacity 0.5s ease);
+        transition: opacity 0.5s ease;
         background: white;
         border-radius: 5px;
         margin: auto;
@@ -129,9 +129,9 @@
 
         .modal-image {
 
-            @include display(flex);
-            @include flex-direction(row);
-            @include align-items(center);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             max-width: 1200px;
             margin: auto;
             padding-bottom: 40px;
@@ -156,7 +156,7 @@
 
     .modal-fade-screen{
 
-        @include display(flex);
+        display: flex;
 
     }
 
@@ -175,7 +175,7 @@
         border-radius: 5px;
         text-align: center;
         margin: 5px auto 27px;
-        @include transition(background .3s ease-in-out 0s);
+        transition: background .3s ease-in-out 0s;
         font-family: $mainFont;
         color: white;
         letter-spacing: 2.5px;
@@ -213,7 +213,6 @@
 
         }
 
-
     }
 
     .no-shadow{
@@ -228,6 +227,23 @@
         }
 
     }
+
+    .app-layout{
+
+        .modal-image{
+
+            flex-wrap: wrap;
+            justify-content: center;
+
+            img {
+
+                margin: 20px;
+            }
+
+        }
+
+    }
+
 }
 
 

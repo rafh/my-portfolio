@@ -1,36 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Rafael Heard's Portfolio</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=1, minimum-scale=1.0, maximum-scale=1.0">
-
-    <!-- Chrome, Firefox OS, Opera and Vivaldi -->
-    <meta name="theme-color" content="#3B97D3">
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#3B97D3">
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#3B97D3">
-
-    <!-- <link rel='shortcut icon' href='favicon.ico?' type='image/x-icon'/ > -->
-    <link rel="shortcut icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-    <link rel="shortcut icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-
-</head>
-
-<body ng-app="app" ng-controller="MainController as main">
-    <?php include_once("assets/svg/svg-master.svg"); ?>
-
-    <!-- <div class="preloader show">
-        <svg class="loading"><use xlink:href="#loader"></use></svg>
-    </div> -->
+<?php include( 'header.php' ); ?>
 
     <section class="heroView">
     <!--    <div class="overlay"></div>-->
-        <img class="img-src blurred-img" src="assets/city.jpg">
+        <img class="img-src blurred-img" src="dist/city.jpg">
 
         <div class="hold">
             <a href="#" class="logo-wrap"><svg class="logo"><use xlink:href="#logo"></use></svg></a>
@@ -50,14 +23,14 @@
         </div>
 
 
-    </section>
+    </section>ccc
 
     <section class="bioView">
         <div class="container">
             <div class="wrap">
                 <div class="text-wrap">
                     <div class="wrap">
-                        <img src="assets/svg/me.svg">
+                        <img src="dist/svg/me.svg">
                     </div>
                     <h3>Hello...<span></span></h3>
                     <p>{{main.bioIntro}}</p>
@@ -76,8 +49,8 @@
             <h2 ng-cloak>{{main.workTitle}}</h2>
         </div>
         <div class="center">
-            <div  id="js-fadeInElement" class="hold">
-                <div class="modal js-fade-element-hide" ng-repeat="item in main.myWork" ng-click="input.isChecked = !input.isChecked">
+            <div class="hold">
+                <div class="modal" ng-repeat="item in main.myWork" ng-click="input.isChecked = !input.isChecked">
                     <label for="modal-{{item.id}}">
                         <div class="overlay"></div>
                         <div class="modal-trigger card" ng-style="{'background-image':'url({{item.preview}})'}"></div>
@@ -91,6 +64,9 @@
                             <a class="modal-cta" ng-href="{{item.link}}" target="_blank" rel="nofollow">launch application</a>
                             <div class="modal-image">
                                 <img ng-src="{{item.image}}" alt="{{item.alt}}">
+                                <img ng-src="{{item.image_1}}" alt="{{item.alt}}">
+                                <img ng-src="{{item.image_2}}" alt="{{item.alt}}">
+                                <img ng-src="{{item.image_3}}" alt="{{item.alt}}">
                             </div>
                         </div>
                     </div>
@@ -137,24 +113,4 @@
         </div>
     </section>
 
-    <footer>
-        <div class="hold">
-            <p ng-cloak>{{main.copyright}}</p>
-        </div>
-        <div class="wrap">
-            <svg class="btn backup faa-float animated"><use xlink:href="#up-arrow"></use></svg>
-            <a ng-href="{{main.linkedin}}" target="_blank" rel="nofollow" class="btn btn__social"><svg><use xlink:href="#linkedin-icon"></use></svg></a>
-            <a ng-href="{{main.twitter}}" target="_blank" rel="nofollow" class="btn btn__social"><svg><use xlink:href="#twitter-icon"></use></svg></a>
-            <a ng-href="{{main.github}}" target="_blank" rel="nofollow" class="btn btn__social"><svg><use xlink:href="#github-icon"></use></svg></a>
-        </div>
-    </footer>
-
-
-
-</body>
-<script src="js/min/angular.min.js"></script>
-<script src="js/min/angular-messages.min.js"></script>
-<script src="js/min/jquery.min.js"></script>
-<script src="js/min/merged-min.js"></script>
-
-</html>
+<?php include( 'footer.php' ); ?>
