@@ -106,7 +106,7 @@
 
 @mixin rem($property, $values) {
     // Create a couple of empty lists as output buffers.
-    $font-size: $base-font-size;
+    $font-size: 16px;
     $px-values: ();
     $rem-values: ();
 
@@ -137,7 +137,7 @@
             $px-values: join($px-values, round($value * $font-size));
             $rem-values: join($rem-values, #{$value}rem);
         }
-        
+
     }
 
     // output the converted rules
