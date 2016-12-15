@@ -3,7 +3,7 @@
 
     <section class="heroView">
     <!--    <div class="overlay"></div>-->
-        <img class="img-src blurred-img" src="dist/city.jpg">
+        <img class="img-src blurred-img" src="dist/desk.jpg">
 
         <div class="hold">
             <a href="#" class="logo-wrap"><svg class="logo"><use xlink:href="#logo"></use></svg></a>
@@ -19,7 +19,7 @@
         <div class="wrap" ng-cloak>
             <h1><span>{{main.first}} </span>{{main.last}}</h1>
             <p>{{main.adj}} {{main.titleCaption}}</p>
-            <a href="#"><svg class="btn bouncing-arrow floating"><use xlink:href="#down-arrow"></use></svg></a>
+            <a href="#" style="max-width: 150px; margin: auto;"><svg class="btn bouncing-arrow floating"><use xlink:href="#down-arrow"></use></svg></a>
         </div>
 
 
@@ -100,7 +100,7 @@
                     </div>
 
                     <div class="group">
-                        <textarea type="text" name="message" ng-model="main.form.message" ng-minlength="1" rows="10" required></textarea>
+                        <textarea type="text" name="message" ng-model="main.form.message" rows="10"></textarea>
                         <span ng-model="main.form.message"></span>
                         <div ng-messages="contactForm.message.$error" ng-if="contactForm.userMessage.$dirty" ng-cloak>
                     </div>

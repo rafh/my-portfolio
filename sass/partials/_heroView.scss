@@ -1,7 +1,7 @@
 
 .heroView {
 
-    background: url("../dist/city-bw.jpg")  center  $main-color;
+    background: url("../dist/desk-bw.jpg")  center  $main-color;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -106,7 +106,7 @@
 
             span {
 
-                color: $sub-color;
+                color: $orange;
 
             }
 
@@ -121,7 +121,7 @@
         p {
 
             font-family: $mainFont;
-            color: white;
+            color: $blue;
             text-align: center;
             letter-spacing: 3px;
             text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.34);

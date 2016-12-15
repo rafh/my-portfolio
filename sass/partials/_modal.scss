@@ -58,15 +58,8 @@
         background: white;
         cursor: pointer;
         transition: transform .8s;
-        transform: rotate(-90deg);
         @include position(absolute, ($padding /2) ($padding /2) null null);
         @include size(1.5em);
-
-        &:hover {
-
-            transform: rotate(90deg);
-
-        }
 
         &:after,
         &:before {

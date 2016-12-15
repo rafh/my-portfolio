@@ -81,7 +81,7 @@ angular.module('app').controller("MainController", ['$http', function($http) {
             image: '../dist/cutzbydrew-clip.jpg',
             alt: 'Cutz by Drew Snapshot',
             content: 'I was contracted to complete this web application by a local barber. During the process of designing and developing I mentored a student from a local university.  My goal was to complete this website in a timely manner, help improve the growth of this business, and allow this student to gain valuable experience. This web application was designed and developed by the student and myself. It is also a custom Wordpress theme.'
-        },
+        }
         // {
         //     id: 6,
         //     title: 'Restaurant Review',

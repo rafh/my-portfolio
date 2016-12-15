@@ -5,7 +5,7 @@
 footer {
 
     height: 50%;
-    background: url("../dist/city.jpg") no-repeat bottom center;
+    background: url("../dist/code.jpg") no-repeat bottom center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@ footer {
         p {
 
             font-family: $mainFont;
-            color: white;
+            color: $white;
             letter-spacing: 1px;
             padding-bottom: 40px;
             margin-bottom: 20px;
