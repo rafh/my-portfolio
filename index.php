@@ -6,7 +6,7 @@
         <img class="img-src blurred-img" src="dist/desk.jpg">
 
         <div class="hold">
-            <a href="#" class="logo-wrap"><svg class="logo"><use xlink:href="#logo"></use></svg></a>
+            <a href="#" class="logo-wrap"><svg class="logo"><use xlink:href="#logo-v2"></use></svg></a>
 
             <div class="wrap">
                 <a ng-href="{{main.linkedin}}" target="_blank" rel="nofollow" class="btn btn__social"><svg class=""><use xlink:href="#linkedin-icon"></use></svg></a>

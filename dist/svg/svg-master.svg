@@ -44,6 +44,8 @@
 			c-1.5-0.4-3.3-0.6-5.4-0.6c-0.4,0-0.9,0-1.4,0c-0.5,0-1.1,0.1-1.7,0.1C17.8,5.5,17.4,5.6,17.2,5.6z"/>
 	</symbol>
 
+	<symbol id="logo-v2" viewBox="0 0 59 144.38"><defs><style>.cls-1{font-size:120px;fill:#ffac00;font-family:SavoyeLetPlain, Savoye LET;}</style></defs><title>logo-v2</title><text class="cls-1" transform="translate(0 99.67)">R</text></symbol>
+
 	<symbol id="down-arrow" viewBox="0 0 18 24">
 		<path d="M9,14L0,0l18,0L9,14z M18,10h-4l-5,8l-5-8H0l9,14L18,10z"/>
 	</symbol>
