@@ -18,8 +18,8 @@
     <meta name="description" content="I am an experience Web Developer, and I am alawys learning and applying new techiques in order to remain current with today's standards.">
 
     <!-- <link rel='shortcut icon' href='favicon.ico?' type='image/x-icon'/ > -->
-    <link rel="shortcut icon" type="image/png" href="favicon-32x32.png?v=2" sizes="32x32" />
-    <link rel="shortcut icon" type="image/png" href="favicon-16x16.png?v=2" sizes="16x16" />
+    <link rel="shortcut icon" type="image/png" href="favicon-32x32.png?v=3" sizes="32x32" />
+    <link rel="shortcut icon" type="image/png" href="favicon-16x16.png?v=3" sizes="16x16" />
 
 </head>
 
