@@ -11,7 +11,7 @@ angular.module('app').controller("MainController", ['$http', function($http) {
     vm.adj           = 'Passionate';
     vm.titleCaption  = 'Web Developer';
     vm.bioTitle      = 'My work is my passion...';
-    vm.bioIntro      = 'You probably already know my name. Welcome to my portfolio developed using AngularJS.';
+    vm.bioIntro      = 'You probably already know my name, so let me cut straight to the chase.';
     vm.bio           = "I focus on great functionality, clean markup, and bringing designs to life. I'm constantly learning to keep my skills relevant.  When I am away from my computer I like building DIY projects.";
     vm.workTitle     = 'Work/Play';
     vm.contactTitle  = 'Contact Me';
@@ -130,8 +130,6 @@ angular.module('app').controller("MainController", ['$http', function($http) {
         return false;
 
     };
-
-
 
 }]);
 

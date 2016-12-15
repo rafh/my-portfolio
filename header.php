@@ -9,11 +9,11 @@
           content="width=device-width, initial-scale=1.0, user-scalable=1, minimum-scale=1.0, maximum-scale=1.0">
 
     <!-- Chrome, Firefox OS, Opera and Vivaldi -->
-    <meta name="theme-color" content="#3B97D3">
+    <meta name="theme-color" content="#1B3E59">
     <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#3B97D3">
+    <meta name="msapplication-navbutton-color" content="#1B3E59">
     <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#3B97D3">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1B3E59">
 
     <meta name="description" content="I am an experience Web Developer, and I am alawys learning and applying new techiques in order to remain current with today's standards.">
 
@@ -26,6 +26,6 @@
 <body ng-app="app" ng-controller="MainController as main">
     <?php include_once("dist/svg/svg-master.svg"); ?>
 
-    <!-- <div class="preloader show">
-        <svg class="loading"><use xlink:href="#loader"></use></svg>
-    </div> -->
+    <!-- <div class="preloader show"> -->
+        <!-- <svg class="loading"><use xlink:href="#loader"></use></svg> -->
+    <!-- </div> -->

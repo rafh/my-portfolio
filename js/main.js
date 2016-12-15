@@ -21,6 +21,7 @@ $(document).ready(function(){
 
     //the image's opacity will fade to 0
     //as the page scrolls the position is divided to calculate the opacity
+
     $(window).scroll(function() {
         var $s = $(window).scrollTop(),
             opacityVal = ($s / 200.0);
@@ -30,9 +31,10 @@ $(document).ready(function(){
             opacityVal = ( $s/$s );
         }
         $('.blurred-img').css('opacity', opacityVal);
+
     });
 
-    //calculates the height for the transistion image
+    //calculates the height for the transition image
     var calcH = $('.heroView').outerHeight( true );
     $('.img-src').css('height', calcH);
 
@@ -44,8 +46,8 @@ function turnOffPreloader(vars){
 
     if( imagesLoaded && timesUp === true){
         $('body').removeClass('no-scroll');
-        $('.preloader').removeClass('show');
-        $('.preloader').addClass('hide');
+        // $('.preloader').removeClass('show');
+        // $('.preloader').addClass('hide');
     }
 
 }
