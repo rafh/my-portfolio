@@ -31,12 +31,10 @@
 
         padding: 0.8em 1em;
         transition: all, 0.4s ease-in-out;
-        // @include transition(transform 1s);
 
         &:hover{
 
             filter: grayscale(100%);
-            // @include transform(scale(1.1));
 
         }
 
@@ -45,39 +43,41 @@
     .modal-fade-screen {
 
         transition: opacity 0.5s ease;
-        @include position(fixed, 0);
         background-color: rgba(#000, 0.85);
         opacity: 0;
         text-align: left;
         visibility: hidden;
         z-index: 10000;
         overflow-y: scroll;
+        @include position(fixed, 0);
 
     }
 
     .modal-close {
 
-        @include position(absolute, ($padding /2) ($padding /2) null null);
-        @include size(1.5em);
         background: white;
         cursor: pointer;
-        transition: all .8s;
+        transition: transform .8s;
         transform: rotate(-90deg);
+        @include position(absolute, ($padding /2) ($padding /2) null null);
+        @include size(1.5em);
 
         &:hover {
+
             transform: rotate(90deg);
+
         }
 
         &:after,
         &:before {
 
-            @include position(absolute, 3px 3px 0 50%);
             transform: rotate(45deg);
-            @include size(0.15em 1.5em);
             background: $light-gray;
             content: '';
             display: block;
             margin: -3px 0 0 -1px;
+            @include position(absolute, 3px 3px 0 50%);
+            @include size(0.15em 1.5em);
 
         }
 
@@ -116,20 +116,20 @@
             text-align: left;
             text-transform: capitalize;
             font-family: $mainFont;
-            font-size: 2.5em;
             letter-spacing: 2px;
             max-width: 1200px;
             margin: auto;
+            @include rem(font-size, 40px);
 
         }
 
         p {
 
             color: $dark-gray;
-            line-height: 1.6em;
             font-family: $subFont;
             max-width: 1200px;
             margin: auto auto 1em;
+            @include rem(line-height, 25px);
 
         }
 
@@ -160,7 +160,7 @@
 
     }
 
-    .modal-fade-screen{
+    .modal-fade-screen {
 
         display: flex;
 
@@ -172,7 +172,7 @@
 
     }
 
-    .modal-cta{
+    .modal-cta {
 
         display: block;
         background: $sub-color;
@@ -186,10 +186,10 @@
         color: white;
         letter-spacing: 2.5px;
         text-decoration: none;
-        font-size: 1.3em;
         text-transform: uppercase;
+        @include rem(font-size, 20px);
 
-        &:hover{
+        &:hover {
 
             background: darken($sub-color, 20%);
 
@@ -198,15 +198,15 @@
     }
 
     //added this class to feature projects coming soon
-    .coming-soon{
+    .coming-soon {
 
-        .modal-cta{
+        .modal-cta {
 
             display: none;
 
         }
 
-        .modal-image{
+        .modal-image {
 
             img{
 
@@ -221,7 +221,7 @@
 
     }
 
-    .no-shadow{
+    .no-shadow {
 
         img{
 
@@ -234,9 +234,9 @@
 
     }
 
-    .app-layout{
+    .app-layout {
 
-        .modal-image{
+        .modal-image {
 
             flex-wrap: wrap;
             justify-content: center;
@@ -244,6 +244,7 @@
             img {
 
                 margin: 20px;
+
             }
 
         }

@@ -7,7 +7,7 @@
 
 }
 
-body{
+body {
 
     height: 100%;
     background: $green;
@@ -17,13 +17,7 @@ body{
 html {
 
     height: 100%;
-    font-size: 18px;
-
-    @media (max-width: 550px) {
-
-        @include rem(font-size, 16px);
-
-    }
+    @include rem(font-size, 16px);
 
     @media (min-width: 1100px) {
 
@@ -33,13 +27,19 @@ html {
 
 }
 
-h1,h2,h3,h4,h5,h6,p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
 
     margin-bottom: 20px;
 
 }
 
-h2{
+h2 {
 
     letter-spacing: 6px;
     color: $dark-gray;
@@ -52,13 +52,13 @@ h2{
 
 }
 
-.container{
+.container {
 
     max-width: 1200px;
 
 }
 
-p{
+p {
 
     color: $dark-gray;
 
@@ -70,7 +70,7 @@ p{
 
 }
 
-.preloader{
+.preloader {
 
     position: fixed;
     width: 100%;
@@ -89,7 +89,7 @@ p{
 
 }
 
-.btn{
+.btn {
 
 
     transition: all ease .5s;
@@ -98,7 +98,7 @@ p{
     position: relative;
     z-index: 30;
 
-    &:hover{
+    &:hover {
 
         fill: $blue !important;
         transition: all ease .5s;
@@ -107,23 +107,23 @@ p{
 
 }
 
-.btn__social{
+.btn__social {
 
     display: inline-block;
     margin-left: 30px;
 
-    svg{
+    svg {
 
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         fill: $orange;
 
-        &:hover{
+        &:hover {
             fill: $sub-color;
         }
 
 
-        @media screen and (max-width: 500px) {
+        @media screen and (min-width: 700px) {
 
             width: 25px;
             height: 25px;
@@ -134,7 +134,7 @@ p{
 
 }
 
-.floating{
+.floating {
 
     -webkit-animation-name: Floatingx;
     -webkit-animation-duration: 3s;
@@ -149,15 +149,15 @@ p{
 
 }
 
-@-webkit-keyframes Floatingx{
+@-webkit-keyframes Floatingx {
 
     from {-webkit-transform:translate(0, 0px);}
     65% {-webkit-transform:translate(0, 15px);}
-    to {-webkit-transform: translate(0, -0px);    }
+    to {-webkit-transform: translate(0, -0px);}
 
 }
 
-@-moz-keyframes Floating{
+@-moz-keyframes Floating {
 
     from {-moz-transform:translate(0, 0px);}
     65% {-moz-transform:translate(0, 15px);}
@@ -165,7 +165,7 @@ p{
 
 }
 
-.wrapper{
+.wrapper {
 
     max-width: 1400px;
 

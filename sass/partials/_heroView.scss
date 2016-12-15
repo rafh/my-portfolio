@@ -1,5 +1,5 @@
 
-.heroView{
+.heroView {
 
     background: url("../dist/city-bw.jpg")  center  $main-color;
     background-size: cover;
@@ -13,7 +13,7 @@
 
     }
 
-    span{
+    span {
 
         color: $orange;
 
@@ -35,22 +35,22 @@
 
     }
 
-    .hold{
+    .hold {
 
         display: flex;
         align-items: baseline;
 
-        .wrap{
+        .wrap {
 
             width: 100%;
             flex-direction: row;
             justify-content: flex-end;
             padding-right: 30px;
             padding-top: 30px;
-            @include angle(after, true);
             background: white;
+            @include angle(after, true);
 
-            &:after{
+            &:after {
 
                 height: 300px;
                 transform-origin: 0 0;
@@ -61,14 +61,14 @@
 
     }
 
-    .logo-wrap{
+    .logo-wrap {
 
         position: absolute;
         left: 0;
         cursor: default;
         z-index: 30;
 
-        .logo{
+        .logo {
 
             z-index: 100;
             box-sizing: border-box;
@@ -94,18 +94,17 @@
         display: flex;
         flex-direction: column;
 
-
         h1 {
 
             font-family: $mainFont;
-            font-size: 5.5em;
             color: white;
             letter-spacing: 5px;
             text-align: center;
             margin: 0 10px;
             text-shadow: 1px 2px 1px rgba(51,51,51,0.54);
+            @include rem(font-size, 88px);
 
-            span{
+            span {
 
                 color: $sub-color;
 
@@ -113,7 +112,7 @@
 
             @media screen and (min-width: 614px) {
 
-                font-size: 7.5em;
+                @include rem(font-size, 120px);
 
             }
 
@@ -122,22 +121,22 @@
         p {
 
             font-family: $mainFont;
-            font-size: 1.5em;
             color: white;
             text-align: center;
             letter-spacing: 3px;
             text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.34);
+            @include rem(font-size, 24px);
 
             @media screen and (min-width: 614px) {
 
-                font-size: 1.75em;
+                @include rem(font-size, 28px);
 
             }
 
         }
 
     }
-    .bouncing-arrow{
+    .bouncing-arrow {
 
         position: relative;
         display: block;

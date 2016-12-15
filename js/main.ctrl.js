@@ -82,15 +82,15 @@ angular.module('app').controller("MainController", ['$http', function($http) {
             alt: 'Cutz by Drew Snapshot',
             content: 'I was contracted to complete this web application by a local barber. During the process of designing and developing I mentored a student from a local university.  My goal was to complete this website in a timely manner, help improve the growth of this business, and allow this student to gain valuable experience. This web application was designed and developed by the student and myself. It is also a custom Wordpress theme.'
         },
-        {
-            id: 6,
-            title: 'Restaurant Review',
-            link: 'http://rafaelheard.com/new-eats/',
-            preview: '../dist/rest.png',
-            image: '../dist/review-clip.jpg',
-            alt: 'Restaurant Review Snapshot',
-            content: "This website is something I built in my free time. I designed this from start to finish using Photoshop. I've noticed a few restaurant websites recently geared more so for a mobile experience, so I started my designs from mobile and worked my way up to desktop. Once I was done designing I began the development phase.  I used Sass and Jquery to finish this website. I used flexbox throughout this website to showcase my understanding of this aspect."
-        },
+        // {
+        //     id: 6,
+        //     title: 'Restaurant Review',
+        //     link: 'http://rafaelheard.com/new-eats/',
+        //     preview: '../dist/rest.png',
+        //     image: '../dist/review-clip.jpg',
+        //     alt: 'Restaurant Review Snapshot',
+        //     content: "This website is something I built in my free time. I designed this from start to finish using Photoshop. I've noticed a few restaurant websites recently geared more so for a mobile experience, so I started my designs from mobile and worked my way up to desktop. Once I was done designing I began the development phase.  I used Sass and Jquery to finish this website. I used flexbox throughout this website to showcase my understanding of this aspect."
+        // },
         // {
         //     id: 5,
         //     title: 'Ordering app',

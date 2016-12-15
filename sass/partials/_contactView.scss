@@ -1,7 +1,8 @@
 /*******************
 *   Contact Section
 *******************/
-.contactView{
+
+.contactView {
 
     top: 0;
     min-height: 100%;
@@ -13,23 +14,22 @@
     justify-content: center;
     @include angle(before, true);
 
-    .wrap{
+    .wrap {
 
         padding: 30px;
         display: flex;
         justify-content: center;
 
-        h2{
+        h2 {
 
             font-family: $mainFont;
-            font-size: 4em;
             padding-top: 50px;
+            @include rem(font-size, 64px);
 
             @media screen and (min-width: 614px){
 
-
-                font-size: 4.5em;
                 margin-bottom: 0;
+                @include rem(font-size, 72px);
 
             }
 
@@ -37,13 +37,13 @@
 
     }
 
-    .hold{
+    .hold {
 
         display: flex;
         width: 100%;
         margin: 0 auto;
 
-        .myForm{
+        .myForm {
 
             display: flex;
             margin: auto;
@@ -78,29 +78,28 @@
                     input {
 
                         font-family: $subFont;
-                        font-size: 1em;
                         padding: 10px;
                         width: calc(100% - 10px);
                         border: none;
                         margin: 5px auto;
+                        @include rem(font-size, 16px);
 
                     }
 
-                    textarea{
+                    textarea {
 
-                        font-size: 1em;
                         width: calc(100% - 10px);
                         padding: 10px;
                         margin: 5px 0;
                         border: none;
+                        @include rem(font-size, 16px);
 
                     }
 
-                    .submit{
+                    .submit {
 
                         position: relative;
                         font-family: $mainFont;
-                        font-size: 2em;
                         letter-spacing: 1px;
                         text-align: center;
                         color: $dark-gray;
@@ -111,13 +110,14 @@
                         margin: 7px auto;
                         transition: background-color 0.5s ease;
                         border: none;
+                        @include rem(font-size, 32px);
 
                         &:disabled {
 
                             background: lightgrey !important;
                             cursor: default !important;
 
-                            &:hover{
+                            &:hover {
 
                                 color: $dark-gray;
 
@@ -126,7 +126,7 @@
                         }
 
 
-                        &:hover{
+                        &:hover {
 
                             background: $orange;
                             transition: background-color 0.5s ease;

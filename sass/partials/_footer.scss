@@ -11,7 +11,7 @@ footer {
     flex-direction: column;
     @include angle(before, true);
 
-    &:before{
+    &:before {
 
         background: $main-color;
         height: 30%;
@@ -24,18 +24,16 @@ footer {
 
     }
 
-    .hold{
+    .hold {
 
         position: absolute;
         bottom: 27px;
         right: 0;
 
-
-        @media screen and (min-width: 614px){
+        @media screen and (min-width: 614px) {
 
             position: relative;
             bottom: 0;
-
             order: 1;
             display: flex;
             justify-content: flex-end;
@@ -43,7 +41,7 @@ footer {
 
         }
 
-        p{
+        p {
 
             font-family: $mainFont;
             color: white;
@@ -65,7 +63,7 @@ footer {
 
     }
 
-    .wrap{
+    .wrap {
 
         flex-grow: 20;
         height: 100%;
@@ -74,13 +72,13 @@ footer {
         align-items: flex-end;
         order: 1;
 
-        @media screen and (min-width: 614px){
+        @media screen and (min-width: 614px) {
 
             order: 1;
 
         }
 
-        .logo{
+        .logo {
 
             z-index: 100;
             width: 75px;
@@ -91,7 +89,7 @@ footer {
 
         }
 
-        a{
+        a {
 
             padding-bottom: 30px;
 
@@ -103,7 +101,7 @@ footer {
 
         }
 
-        .backup{
+        .backup {
 
             padding-bottom: 30px;
             height: 30px;

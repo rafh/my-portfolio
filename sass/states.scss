@@ -2,17 +2,17 @@
 *   States
 *******************/
 
-.no-scroll{
+.no-scroll {
     overflow-y: hidden;
 }
 
-.show{
+.show {
     display: -webkit-flex;
     display: flex;
     overflow-y: hidden;
 }
 
-.hide{
+.hide {
     opacity: 0;
     visibility: hidden;
     transition: all .5s ease-in-out;
